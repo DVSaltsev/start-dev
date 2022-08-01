@@ -1,0 +1,112 @@
+.tradein {
+  padding: 32px 0px;
+
+  &__container {
+    box-shadow: 0px 0px 16px $gray-90;
+
+    @media (min-width:($min-width-desktop)) {
+      box-shadow: none;
+    }
+  }
+
+  &__wrapper-inner {
+    display: grid;
+    row-gap: 24px;
+
+    @media (min-width:($min-width-tablet)) {
+      grid-template-columns: 1fr 524/1280*100%;
+      column-gap: 86px;
+    }
+
+    @media (min-width:($min-width-desktop)) {
+      column-gap: 106px;
+      row-gap: 0px;
+    }
+
+  }
+
+  &__wrapper-img {
+    margin-left: -16px;
+    margin-right: -16px;
+
+    @media (min-width:($min-width-tablet)) {
+      margin-left: -30px;
+      margin-right: 0px;
+    }
+
+    @media (min-width:($min-width-desktop+90px)) {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+    @media (min-width:($min-width-desktop+90px)) {}
+  }
+
+  &__wrapper-conditions {
+    display: grid;
+    row-gap: 24px;
+
+    @media (min-width:($min-width-tablet)) {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+
+    @media (min-width:($min-width-desktop)) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+      row-gap: 32px;
+      padding-left: 70px;
+    }
+  }
+
+  &__h2 {
+    margin: 0;
+
+    @media (min-width:($min-width-desktop)) {
+      max-width: 560px;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 120%;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 120%;
+    display: grid;
+    row-gap: 6px;
+
+    @media (min-width:($min-width-desktop)) {
+      font-size: 16px;
+      line-height: 140%;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    line-height: 120%;
+
+    @media (min-width:($min-width-desktop)) {
+      font-size: 16px;
+      line-height: 140%;
+      width: 360px;
+    }
+  }
+
+  &__icons-arrow-tradein {
+    margin-right: 8px;
+  }
+}

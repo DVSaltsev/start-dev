@@ -1,0 +1,29 @@
+// Начните писать стили здесь
+// Global blocks
+@import "common-blocks/fonts.scss";
+@import "common-blocks/variables.scss";
+@import "common-blocks/mixins.scss";
+@import "common-blocks/visually-hidden.scss";
+@import "common-blocks/container.scss";
+@import "common-blocks/logo.scss";
+@import "common-blocks/address.scss";
+@import "common-blocks/regime.scss";
+@import "common-blocks/phone.scss";
+@import "common-blocks/button.scss";
+@import "common-blocks/text-title.scss";
+@import "common-blocks/form.scss";
+
+
+// @import "global blocks/templates.scss";
+
+// Structural blocks
+@import "structural-blocks/page.scss";
+@import "structural-blocks/header.scss";
+@import "structural-blocks/avialable.scss";
+@import "structural-blocks/add.scss";
+@import "structural-blocks/shock.scss";
+@import "structural-blocks/models.scss";
+@import "structural-blocks/set.scss";
+@import "structural-blocks/credit.scss";
+@import "structural-blocks/tradein.scss";
+@import "structural-blocks/footer.scss";

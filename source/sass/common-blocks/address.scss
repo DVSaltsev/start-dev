@@ -1,0 +1,18 @@
+.address {
+  line-height: 140%;
+  font-weight: 300;
+  width: 166px;
+  margin: 0;
+  display: flex;
+}
+
+.address::before {
+  content: "";
+  width: 14px;
+  height: 16px;
+  display: block;
+  background-image: url(../img/icons/mark-address.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-right: 10px;
+}

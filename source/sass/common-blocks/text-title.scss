@@ -1,0 +1,18 @@
+.text-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+@media (min-width: ($min-width-tablet+60px)) {
+  .text-title {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: ($min-width-desktop+90px)) {
+  .text-title {
+    font-size: 32px;
+  }
+}

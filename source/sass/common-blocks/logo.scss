@@ -1,0 +1,29 @@
+.logo {
+  display: flex;
+  text-decoration: none;
+  width: 110px;
+  min-height: 34px;
+  justify-content: center;
+  align-items: center;
+  // flex-grow: 1;
+  cursor: pointer;
+
+  @media (min-width: ($min-width-desktop)) {
+    width: 146px;
+    min-height: 46px;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: $white;
+  }
+
+  &__img:hover {
+    border-radius: 23px;
+    background-color: $green-100;
+  }
+
+}

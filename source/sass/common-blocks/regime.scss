@@ -1,0 +1,19 @@
+.regime {
+  line-height: 140%;
+  font-weight: 300;
+  width: 160px;
+  // display: none;
+  margin: 0;
+  display: flex;
+}
+
+.regime::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  display: block;
+  background-image: url(../img/icons/mark-regime.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-right: 10px;
+}

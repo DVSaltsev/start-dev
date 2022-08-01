@@ -1,0 +1,288 @@
+.models {
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.models__h2 {
+  font-size: 16px;
+  text-align: center;
+  margin: 0px;
+  margin-bottom: 16px;
+}
+
+.models__nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  width: 100%;
+  min-height: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 5%;
+  row-gap: 10px;
+  padding-bottom: 16px;
+}
+
+
+.models__nav-link {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  font-size: 16px;
+  text-transform: uppercase;
+  display: block;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.models__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.models__item {
+  padding-top: 32px;
+  padding-bottom: 40px;
+
+  &:nth-child(even) {
+    background-color: $gray-10;
+  }
+}
+
+.models__name {
+  text-align: center;
+  margin: 0;
+}
+
+
+.models__img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.models__name-below {
+  display: none;
+}
+
+.models__info {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 24px;
+  margin-bottom: 24px;
+}
+
+.models__info-item {
+  width: 171.5px;
+  min-height: 34px;
+  flex: 1 1 171.5px;
+  display: flex;
+
+}
+
+.models__text {
+  margin: 0px;
+  padding-left: 12px;
+}
+
+.models__text-value {
+  color: $green-100;
+}
+
+.models__wrapper-price-button {
+  min-height: 30px;
+  display: flex;
+  padding: 0 13px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+  column-gap: 8px;
+}
+
+.models__price {
+  margin: 0;
+  text-transform: none;
+
+}
+
+.models__price-button {
+  width: 132px;
+  min-height: 24px;
+  font-size: 12px;
+  height: auto;
+  background-color: $red;
+  align-self: start;
+}
+
+.models__wrapper-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.models__fix-button {
+  width: 320px;
+  margin-bottom: 16px;
+  display: flex;
+  // text-align: center;
+}
+
+.models__credit-button {
+  width: 320px;
+  margin-bottom: 16px;
+  display: flex;
+  background-color: $black;
+}
+
+.models__tradein-button {
+  width: 320px;
+  margin-bottom: 16px;
+  display: flex;
+  background-color: white;
+  border: 1px solid $green-100;
+  color: $black;
+}
+
+.models__tradein-button:active {
+  color: $white;
+}
+
+@media (min-width: ($min-width-tablet)) {
+
+  .models__h2 {
+    font-size: 28px;
+  }
+
+  .models__list {
+    row-gap: 32px;
+  }
+
+  .models__item {
+    display: grid;
+    grid-template-columns: 46% 20% 1fr;
+    min-height: 260px;
+    padding: 16px 0px 16px 0px;
+    box-sizing: border-box;
+  }
+
+  .models__name-above {
+    display: none;
+  }
+
+  .models__name-below {
+    display: block;
+  }
+
+  .models__img {
+    align-self: center;
+    justify-self: center;
+  }
+
+  .models__name-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6px;
+  }
+
+  .models__name {
+    text-align: left;
+    padding-bottom: 16px;
+  }
+
+  .models__info {
+    margin-bottom: 0;
+    row-gap: 12px;
+  }
+
+  .models__price {
+    font-size: 18px;
+  }
+
+  .models__actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 32px;
+    padding: 4px;
+  }
+
+  .models__wrapper-price-button {
+    margin: 0;
+    padding: 0;
+    justify-content: start;
+  }
+
+  .models__wrapper-button {
+    row-gap: 16px;
+    align-items: start;
+
+  }
+
+  .models__button {
+    width: 228px;
+    margin: 0;
+    font-size: 12px;
+    min-height: 38px;
+  }
+}
+
+@media (min-width: ($min-width-desktop)) {
+
+  .models__list {
+    row-gap: 48px;
+  }
+
+  .models__item {
+    min-height: 348px;
+    column-gap: 62px;
+  }
+
+  .models__name {
+    font-size: 32px;
+  }
+
+
+  .models__name-info {
+    row-gap: 24px;
+  }
+
+  .models__info {
+    row-gap: 24px;
+    font-size: 16px;
+  }
+}
+
+// @media (min-width: ($min-width-desktop)) {
+//   .models__list {
+//     row-gap: 64px;
+//   }
+
+//   .models__name-info {
+//     row-gap: 42px;
+//   }
+
+//   .models__actions {
+//     row-gap: 46px;
+//   }
+
+//   .models__price {
+//     font-size: 32px;
+//   }
+
+//   .models__wrapper-button {
+//     row-gap: 28px;
+//   }
+
+//   .models__button {
+//     font-size: 16px;
+//     width: 320px;
+//   }
+// }
